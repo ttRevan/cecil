@@ -42,6 +42,7 @@ namespace Mono.Cecil.PE {
 		public UserStringHeap UserStringHeap;
 		public GuidHeap GuidHeap;
 		public TableHeap TableHeap;
+		public PdbHeap PdbHeap;
 
 		readonly int [] coded_index_sizes = new int [13];
 

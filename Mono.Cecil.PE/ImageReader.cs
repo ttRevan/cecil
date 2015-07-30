@@ -371,6 +371,9 @@ namespace Mono.Cecil.PE {
 			case "#US":
 				image.UserStringHeap = new UserStringHeap (section, start, size);
 				break;
+			case "#Pdb":
+				image.PdbHeap = new PdbHeap (section, start, size);
+				break;
 			}
 		}
 
