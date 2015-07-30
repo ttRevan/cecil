@@ -436,6 +436,7 @@ namespace Mono.Cecil.PE {
 			uint offset = (uint) BaseStream.Position - image.MetadataSection.PointerToRawData; // header
 
 			int stridx_size = image.StringHeap.IndexSize;
+			int guididx_size = image.GuidHeap.IndexSize;
 			int blobidx_size = image.BlobHeap != null ? image.BlobHeap.IndexSize : 2;
 
 			var heap = image.TableHeap;
@@ -451,7 +452,7 @@ namespace Mono.Cecil.PE {
 				case Table.Module:
 					size = 2	// Generation
 						+ stridx_size	// Name
-						+ (image.GuidHeap.IndexSize * 3);	// Mvid, EncId, EncBaseId
+						+ (guididx_size * 3);	// Mvid, EncId, EncBaseId
 					break;
 				case Table.TypeRef:
 					size = GetCodedIndexSize (CodedIndex.ResolutionScope)	// ResolutionScope
@@ -638,6 +639,45 @@ namespace Mono.Cecil.PE {
 				case Table.GenericParamConstraint:
 					size = GetTableIndexSize (Table.GenericParam)	// Owner
 						+ GetCodedIndexSize (CodedIndex.TypeDefOrRef);	// Constraint
+					break;
+				case Table.Document:
+					size = blobidx_size	// Name
+						+ guididx_size	// HashAlgorithm
+						+ blobidx_size	// Hash
+						+ guididx_size;	// Language
+					break;
+				case Table.MethodBody:
+					size = blobidx_size;	// SequencePoints
+					break;
+				case Table.LocalScope:
+					size = GetTableIndexSize (Table.Method)	// Method
+						+ GetTableIndexSize (Table.ImportScope)	// ImportScope
+						+ GetTableIndexSize (Table.LocalVariable)	// VariableList
+						+ GetTableIndexSize (Table.LocalConstant)	// ConstantList
+						+ 4 * 2;	// StartOffset, Length
+					break;
+				case Table.LocalVariable:
+					size = 2	// Attributes
+						+ 2		// Index
+						+ stridx_size;	// Name
+					break;
+				case Table.LocalConstant:
+					size = stridx_size	// Name
+						+ blobidx_size;	// Signature
+					break;
+				case Table.ImportScope:
+					size = GetTableIndexSize (Table.ImportScope)	// Parent
+						+ blobidx_size;
+					break;
+				case Table.AsyncMethod:
+					size = GetTableIndexSize (Table.Method)	// KickOffMethod
+						+ 4		// CatchHandlerOffset
+						+ blobidx_size;	// Awaits
+					break;
+				case Table.CustomDebugInformation:
+					size = GetCodedIndexSize (CodedIndex.HasCustomDebugInformation) // Parent
+						+ guididx_size	// Kind
+						+ blobidx_size;	// Value
 					break;
 				default:
 					throw new NotSupportedException ();

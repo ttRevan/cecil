@@ -33,6 +33,12 @@ namespace Mono.Cecil {
 		ManifestResource = 0x28000000,
 		GenericParam = 0x2a000000,
 		MethodSpec = 0x2b000000,
+		GenericParamConstraint = 0x2c000000,
+		Document = 0x30000000,
+		LocalScope = 0x32000000,
+		LocalVariable = 0x33000000,
+		LocalConstant = 0x34000000,
+		ImportScope = 0x35000000,
 		String = 0x70000000,
 	}
 }

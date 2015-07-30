@@ -59,6 +59,15 @@ namespace Mono.Cecil.Metadata {
 		GenericParam = 0x2a,
 		MethodSpec = 0x2b,
 		GenericParamConstraint = 0x2c,
+		// Portable PDB tables
+		Document = 0x30,
+		MethodBody = 0x31,
+		LocalScope = 0x32,
+		LocalVariable = 0x33,
+		LocalConstant = 0x34,
+		ImportScope = 0x35,
+		AsyncMethod = 0x36,
+		CustomDebugInformation = 0x37,
 	}
 
 	struct TableInformation {
