@@ -5,6 +5,11 @@
     <RootNamespace>Mono.Cecil.Pdb</RootNamespace>
     <AssemblyName>SquabPie.Mono.Cecil.Pdb</AssemblyName>
     <NoWarn>0649</NoWarn>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'net_2_0_Release'">
+    <DefineConstants>TRACE;NET_2_0;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Mono.Cecil.csproj">

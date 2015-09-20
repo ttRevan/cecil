@@ -4,6 +4,11 @@
     <ProjectGuid>{D68133BD-1E63-496E-9EDE-4FBDBF77B486}</ProjectGuid>
     <RootNamespace>Mono.Cecil</RootNamespace>
     <AssemblyName>SquabPie.Mono.Cecil</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'net_2_0_Release'">
+    <DefineConstants>TRACE;NET_2_0;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Mono.Cecil.Cil\Code.cs" />

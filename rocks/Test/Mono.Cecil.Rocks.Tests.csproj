@@ -5,6 +5,9 @@
     <RootNamespace>Mono.Cecil.Rocks.Tests</RootNamespace>
     <AssemblyName>Mono.Cecil.Rocks.Tests</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'net_2_0_Release'">
+    <DefineConstants>TRACE;NET_2_0;</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Mono.Cecil.csproj">
       <Project>{D68133BD-1E63-496E-9EDE-4FBDBF77B486}</Project>

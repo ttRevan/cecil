@@ -5,6 +5,11 @@
     <RootNamespace>Mono.Cecil.Mdb</RootNamespace>
     <AssemblyName>SquabPie.Mono.Cecil.Mdb</AssemblyName>
     <DefineConstants>$(DefineConstants);CECIL</DefineConstants>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'net_2_0_Release'">
+    <DefineConstants>TRACE;CECIL;NET_2_0;</DefineConstants>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFrameworkVersion)' != 'v2.0' ">
     <Reference Include="System.Core" />

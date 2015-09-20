@@ -5,6 +5,9 @@
     <RootNamespace>Mono.Cecil.Tests</RootNamespace>
     <AssemblyName>Mono.Custom.Cecil.Tests</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'net_2_0_Release'">
+    <DefineConstants>TRACE;NET_2_0;</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\ProjectInfo.cs" />
     <Compile Include="Mono.Cecil.Tests\AssemblyTests.cs" />
