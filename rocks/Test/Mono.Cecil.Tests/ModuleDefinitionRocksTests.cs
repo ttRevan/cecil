@@ -2,9 +2,9 @@ using System.Linq;
 
 using NUnit.Framework;
 
-using Mono.Cecil.Rocks;
+using SquabPie.Mono.Cecil.Rocks;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class ModuleDefinitionRocksTests : BaseTestFixture {

@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Mono.Cecil.Rocks {
+namespace SquabPie.Mono.Cecil.Rocks {
 
 #if INSIDE_ROCKS
 	public

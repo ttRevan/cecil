@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
 
-using Mono.Cecil;
-using Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil;
+using SquabPie.Mono.Cecil.Metadata;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class MethodTests : BaseTestFixture {

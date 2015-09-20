@@ -12,9 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-using Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil.Cil;
 
-namespace Mono.Cecil.Pdb {
+namespace SquabPie.Mono.Cecil.Pdb {
 
 	class PdbHelper {
 

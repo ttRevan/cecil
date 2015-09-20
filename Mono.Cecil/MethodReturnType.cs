@@ -10,9 +10,9 @@
 
 using System.Threading;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class MethodReturnType : IConstantProvider, ICustomAttributeProvider, IMarshalInfoProvider {
 

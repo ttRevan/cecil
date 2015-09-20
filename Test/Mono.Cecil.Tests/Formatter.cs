@@ -1,9 +1,9 @@
 using System;
 using System.IO;
-using Mono.Cecil;
-using Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil;
+using SquabPie.Mono.Cecil.Cil;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	public static class Formatter {
 

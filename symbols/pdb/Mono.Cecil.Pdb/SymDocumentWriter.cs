@@ -11,7 +11,7 @@ using System;
 
 #if !READ_ONLY
 
-namespace Mono.Cecil.Pdb
+namespace SquabPie.Mono.Cecil.Pdb
 {
 	internal class SymDocumentWriter
 	{

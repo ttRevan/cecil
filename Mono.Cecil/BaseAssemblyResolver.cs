@@ -13,9 +13,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public delegate AssemblyDefinition AssemblyResolveEventHandler (object sender, AssemblyNameReference reference);
 

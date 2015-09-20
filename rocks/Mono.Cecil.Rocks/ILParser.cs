@@ -10,10 +10,10 @@
 
 using System;
 
-using Mono.Cecil.Cil;
-using Mono.Collections.Generic;
+using SquabPie.Mono.Cecil.Cil;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil.Rocks {
+namespace SquabPie.Mono.Cecil.Rocks {
 
 #if INSIDE_ROCKS
 	public

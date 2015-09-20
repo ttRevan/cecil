@@ -4,13 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-using Mono.Cecil;
-using Mono.Cecil.Metadata;
-using Mono.Cecil.PE;
+using SquabPie.Mono.Cecil;
+using SquabPie.Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.PE;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class CustomAttributesTests : BaseTestFixture {

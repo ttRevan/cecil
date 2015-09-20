@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using SR = System.Reflection;
 
-using Mono.Cecil;
+using SquabPie.Mono.Cecil;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	public static class Extensions {
 

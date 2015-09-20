@@ -14,7 +14,7 @@ using System;
 using System.Security;
 using SSP = System.Security.Permissions;
 
-namespace Mono.Cecil.Rocks {
+namespace SquabPie.Mono.Cecil.Rocks {
 
 #if INSIDE_ROCKS
 	public

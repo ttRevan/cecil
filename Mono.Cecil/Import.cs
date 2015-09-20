@@ -10,12 +10,12 @@
 
 using System;
 using System.Collections.Generic;
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 using SR = System.Reflection;
 
-using Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	enum ImportGenericKind {
 		Definition,

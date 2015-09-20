@@ -11,9 +11,9 @@
 using System;
 using System.Collections.Generic;
 
-using Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	struct Range {
 		public uint Start;

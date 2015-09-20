@@ -8,9 +8,9 @@
 // Licensed under the MIT/X11 license.
 //
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class FieldDefinition : FieldReference, IMemberDefinition, IConstantProvider, IMarshalInfoProvider {
 

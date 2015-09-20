@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public abstract class MemberReference : IMetadataTokenProvider {
 

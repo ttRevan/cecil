@@ -8,9 +8,9 @@
 // Licensed under the MIT/X11 license.
 //
 
-using Mono.Cecil.PE;
+using SquabPie.Mono.Cecil.PE;
 
-namespace Mono.Cecil.Metadata {
+namespace SquabPie.Mono.Cecil.Metadata {
 
 	abstract class Heap {
 

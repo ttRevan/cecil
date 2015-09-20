@@ -12,11 +12,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-using Mono.Cecil.Cil;
-using Mono.Collections.Generic;
-using Mono.CompilerServices.SymbolWriter;
+using SquabPie.Mono.Cecil.Cil;
+using SquabPie.Mono.Collections.Generic;
+using SquabPie.Mono.CompilerServices.SymbolWriter;
 
-namespace Mono.Cecil.Mdb {
+namespace SquabPie.Mono.Cecil.Mdb {
 
 #if !READ_ONLY
 	public class MdbWriterProvider : ISymbolWriterProvider {

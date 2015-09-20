@@ -12,9 +12,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using Mono.Cecil;
+using SquabPie.Mono.Cecil;
 
-namespace Mono.Collections.Generic {
+namespace SquabPie.Mono.Collections.Generic {
 
 	public class Collection<T> : IList<T>, IList {
 

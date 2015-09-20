@@ -9,9 +9,9 @@
 //
 
 using System;
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono {
+namespace SquabPie.Mono {
 
 	static class Empty<T> {
 
@@ -19,7 +19,7 @@ namespace Mono {
 	}
 }
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	static partial class Mixin {
 

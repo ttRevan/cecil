@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class AssemblyLinkedResource : Resource {
 

@@ -10,10 +10,10 @@
 
 using System;
 
-using Mono.Cecil.Metadata;
-using Mono.Collections.Generic;
+using SquabPie.Mono.Cecil.Metadata;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class TypeDefinition : TypeReference, IMemberDefinition, ISecurityDeclarationProvider {
 

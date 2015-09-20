@@ -12,7 +12,7 @@ using System;
 
 using RVA = System.UInt32;
 
-namespace Mono.Cecil.PE {
+namespace SquabPie.Mono.Cecil.PE {
 
 	struct DataDirectory {
 

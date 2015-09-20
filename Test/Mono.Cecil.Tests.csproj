@@ -4,7 +4,7 @@
   <PropertyGroup>
     <ProjectGuid>{A47B1F49-A81A-43E8-BE6B-DD28AF2C4055}</ProjectGuid>
     <RootNamespace>Mono.Cecil.Tests</RootNamespace>
-    <AssemblyName>Mono.Cecil.Tests</AssemblyName>
+    <AssemblyName>Mono.Custom.Cecil.Tests</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\ProjectInfo.cs" />

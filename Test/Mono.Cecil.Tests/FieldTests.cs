@@ -1,10 +1,10 @@
 using System;
 
-using Mono.Cecil.PE;
+using SquabPie.Mono.Cecil.PE;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class FieldTests : BaseTestFixture {

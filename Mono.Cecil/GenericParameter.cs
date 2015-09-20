@@ -10,11 +10,11 @@
 
 using System;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-using Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class GenericParameter : TypeReference, ICustomAttributeProvider {
 

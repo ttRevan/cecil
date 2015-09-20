@@ -10,13 +10,13 @@
 
 using System;
 
-using Mono;
-using Mono.Cecil.Cil;
-using Mono.Cecil.Metadata;
+using SquabPie.Mono;
+using SquabPie.Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil.Metadata;
 
 using RVA = System.UInt32;
 
-namespace Mono.Cecil.PE {
+namespace SquabPie.Mono.Cecil.PE {
 
 	sealed class Image {
 

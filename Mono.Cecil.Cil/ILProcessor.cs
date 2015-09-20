@@ -10,9 +10,9 @@
 
 using System;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil.Cil {
+namespace SquabPie.Mono.Cecil.Cil {
 
 	public sealed class ILProcessor {
 

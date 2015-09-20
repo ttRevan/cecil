@@ -13,10 +13,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-using Mono.Collections.Generic;
-using Mono.Cecil.Cil;
-using Mono.Cecil.Metadata;
-using Mono.Cecil.PE;
+using SquabPie.Mono.Collections.Generic;
+using SquabPie.Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.PE;
 
 using RVA = System.UInt32;
 using RID = System.UInt32;
@@ -24,7 +24,7 @@ using CodedRID = System.UInt32;
 using StringIndex = System.UInt32;
 using BlobIndex = System.UInt32;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 #if !READ_ONLY
 

@@ -10,9 +10,9 @@
 
 using System;
 
-using Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil.Cil;
 
-namespace Mono.Cecil.Rocks {
+namespace SquabPie.Mono.Cecil.Rocks {
 
 #if INSIDE_ROCKS
 	public

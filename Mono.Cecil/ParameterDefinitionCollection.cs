@@ -10,9 +10,9 @@
 
 using System;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	sealed class ParameterDefinitionCollection : Collection<ParameterDefinition> {
 

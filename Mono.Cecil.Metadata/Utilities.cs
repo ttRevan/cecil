@@ -10,9 +10,9 @@
 
 using System;
 
-using Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	static partial class Mixin {
 

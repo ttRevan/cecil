@@ -12,7 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Mono.Cecil.Rocks {
+namespace SquabPie.Mono.Cecil.Rocks {
 
 #if INSIDE_ROCKS
 	public

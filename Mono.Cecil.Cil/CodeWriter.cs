@@ -11,16 +11,16 @@
 using System;
 using System.Collections.Generic;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-using Mono.Cecil.Metadata;
-using Mono.Cecil.PE;
+using SquabPie.Mono.Cecil.Metadata;
+using SquabPie.Mono.Cecil.PE;
 
 using RVA = System.UInt32;
 
 #if !READ_ONLY
 
-namespace Mono.Cecil.Cil {
+namespace SquabPie.Mono.Cecil.Cil {
 
 	sealed class CodeWriter : ByteBuffer {
 

@@ -10,9 +10,9 @@
 
 using System;
 
-using MD = Mono.Cecil.Metadata;
+using MD = SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class PinnedType : TypeSpecification {
 

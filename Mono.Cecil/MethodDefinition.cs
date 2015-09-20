@@ -8,12 +8,12 @@
 // Licensed under the MIT/X11 license.
 //
 
-using Mono.Cecil.Cil;
-using Mono.Collections.Generic;
+using SquabPie.Mono.Cecil.Cil;
+using SquabPie.Mono.Collections.Generic;
 
 using RVA = System.UInt32;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class MethodDefinition : MethodReference, IMemberDefinition, ISecurityDeclarationProvider {
 

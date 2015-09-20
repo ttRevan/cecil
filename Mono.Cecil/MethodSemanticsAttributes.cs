@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	[Flags]
 	public enum MethodSemanticsAttributes : ushort {

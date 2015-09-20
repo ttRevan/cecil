@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-using Mono.Cecil;
+using SquabPie.Mono.Cecil;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class ModuleTests : BaseTestFixture {

@@ -11,9 +11,9 @@
 using System;
 using System.Text;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public class MethodReference : MemberReference, IMethodSignature, IGenericParameterProvider, IGenericContext {
 

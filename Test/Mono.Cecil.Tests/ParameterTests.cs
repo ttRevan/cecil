@@ -2,7 +2,7 @@ using System;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class ParameterTests : BaseTestFixture {

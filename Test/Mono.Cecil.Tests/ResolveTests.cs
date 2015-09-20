@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-using Mono.Cecil;
-using Mono.Cecil.Cil;
+using SquabPie.Mono.Cecil;
+using SquabPie.Mono.Cecil.Cil;
 
 using NUnit.Framework;
 
-namespace Mono.Cecil.Tests {
+namespace SquabPie.Mono.Cecil.Tests {
 
 	[TestFixture]
 	public class ResolveTests : BaseTestFixture {
@@ -84,7 +84,7 @@ namespace Mono.Cecil.Tests {
 					return d.TryGetValue (s, out type);
 				});
 
-			Assert.AreEqual ("System.Boolean System.Collections.Generic.Dictionary`2<System.String,Mono.Cecil.TypeDefinition>::TryGetValue(!0,!1&)",
+			Assert.AreEqual ("System.Boolean System.Collections.Generic.Dictionary`2<System.String,SquabPie.Mono.Cecil.TypeDefinition>::TryGetValue(!0,!1&)",
 				try_get_value.FullName);
 
 			var definition = try_get_value.Resolve ();
@@ -193,7 +193,7 @@ namespace Mono.Cecil.Tests {
 		[Test]
 		public void ResolveGenericParameter ()
 		{
-			var collection = typeof (Mono.Collections.Generic.Collection<>).ToDefinition ();
+			var collection = typeof (SquabPie.Mono.Collections.Generic.Collection<>).ToDefinition ();
 			var parameter = collection.GenericParameters [0];
 
 			Assert.IsNotNull (parameter);

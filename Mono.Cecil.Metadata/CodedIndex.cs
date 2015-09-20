@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil.Metadata {
+namespace SquabPie.Mono.Cecil.Metadata {
 
 	enum CodedIndex {
 		TypeDefOrRef,

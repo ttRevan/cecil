@@ -10,10 +10,10 @@
 
 using System;
 using System.Text;
-using Mono.Collections.Generic;
-using MD = Mono.Cecil.Metadata;
+using SquabPie.Mono.Collections.Generic;
+using MD = SquabPie.Mono.Cecil.Metadata;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public sealed class FunctionPointerType : TypeSpecification, IMethodSignature {
 

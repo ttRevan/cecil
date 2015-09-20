@@ -8,7 +8,7 @@
 // Licensed under the MIT/X11 license.
 //
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public enum AssemblyHashAlgorithm : uint {
 		None		= 0x0000,

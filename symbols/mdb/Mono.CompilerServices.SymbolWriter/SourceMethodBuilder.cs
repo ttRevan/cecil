@@ -30,7 +30,7 @@
 
 using System.Collections.Generic;
 
-namespace Mono.CompilerServices.SymbolWriter
+namespace SquabPie.Mono.CompilerServices.SymbolWriter
 {
 	public class SourceMethodBuilder
 	{

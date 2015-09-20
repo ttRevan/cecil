@@ -10,9 +10,9 @@
 
 using System;
 
-using Mono.Collections.Generic;
+using SquabPie.Mono.Collections.Generic;
 
-namespace Mono.Cecil {
+namespace SquabPie.Mono.Cecil {
 
 	public enum SecurityAction : ushort {
 		Request = 1,
