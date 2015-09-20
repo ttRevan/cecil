@@ -13,9 +13,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct ("SquabPie.Mono.Cecil")]
 [assembly: AssemblyCopyright ("Copyright © 2008 - 2015 Jb Evain")]
 
+#if !PCL
 [assembly: ComVisible (false)]
-
-[assembly: AssemblyVersion ("0.9.5.0")]
-#if !CF
-[assembly: AssemblyFileVersion ("0.9.5.0")]
 #endif
+
+[assembly: AssemblyVersion ("0.9.6.0")]
+[assembly: AssemblyFileVersion ("0.9.6.0")]

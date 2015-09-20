@@ -404,11 +404,11 @@ namespace SquabPie.Mono.Cecil.Tests {
 		[Test]
 		public void EmptyBlob ()
 		{
-			TestIL ("types.il", module => {
+			TestIL ("ca-empty-blob.il", module => {
 				var attribute = module.GetType ("CustomAttribute");
 				Assert.AreEqual (1, attribute.CustomAttributes.Count);
 				Assert.AreEqual (0, attribute.CustomAttributes [0].ConstructorArguments.Count);
-			});
+			}, verify: !Platform.OnMono);
 		}
 
 		[Test]
@@ -417,7 +417,7 @@ namespace SquabPie.Mono.Cecil.Tests {
 			var file = Path.Combine (Path.GetTempPath (), "CaBlob.dll");
 
 			var module = ModuleDefinition.CreateModule ("CaBlob.dll", new ModuleParameters { Kind = ModuleKind.Dll, Runtime = TargetRuntime.Net_2_0 });
-			var assembly_title_ctor = module.Import (typeof (System.Reflection.AssemblyTitleAttribute).GetConstructor (new [] {typeof (string)}));
+			var assembly_title_ctor = module.ImportReference (typeof (System.Reflection.AssemblyTitleAttribute).GetConstructor (new [] {typeof (string)}));
 
 			Assert.IsNotNull (assembly_title_ctor);
 
